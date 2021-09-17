@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+#loading{
+    height: 100vh;
+    width: 100%;
+    background: url(../images/Gear.gif) center no-repeat;
+    background-size: 5% 8%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --primary-color: blue;
+}
+
+.my_btn {
+    color: white !important;
+    border-radius: 50px 50px 50px 50px !important;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    padding: 8px 25px !important;
+    transition: .3s;
+}
+
+.my_btn:hover {
+    color: var(--primary-color) !important;
+    background: transparent;
+}
+
+/* ---------------accual css starts here-----------------------  */
+
+/* ====================================================
+        header section
+======================================================= */
+
+/* navbar  */
+
+.navbar {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.navbar .brand {
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-item {
+    margin-left: 30px;
+}
+
+.navbar-nav .my_btn {
+    color: white !important;
+    border-radius: 50px 4px 50px 50px !important;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    padding: 8px 25px !important;
+    transition: .3s all ease-in;
+}
+
+.navbar-nav .my_btn:hover {
+    color: var(--primary-color) !important;
+    background: transparent;
+}
+
+/* TOP BANNER */
+
+.top_banner {
+    width: 100%;
+    height: 120vh;
+}
+
+/* left side  */
+
+.top_banner .hlside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top_banner .hlside h1 {
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-right: 60px;
+    font-weight: bold;
+}
+
+.top_banner .hlside .tbhead {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.top_banner .hlside p {
+    width: 100%;
+    margin: 0px 0 40px 0;
+    line-height: 1.2;
+    padding-right: 60px;
+}
+
+.hlside .btn_grp {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hlside .btn_grp .my_btn {
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s all linear;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.384);
+}
+
+.hlside .btn_grp i {
+    transition: .3s all linear;
+}
+
+.hlside .btn_grp i:hover {
+    color: var(--primary-color);
+}
+
+/* right side  */
+
+.top_banner .hrside {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_banner .hrside img {
+    width: 100%;
+    min-height: 450px;
+    height: auto;
+    border-radius: 90px 90px 3px 90px;
+}
+
+/* header er mid search box  */
+
+.top_banner .search_bar {
+    border-radius: 80px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.548);
+    padding-bottom: 30px;
+    margin: 20px 0 50px 0;
+}
+
+.top_banner .search_bar .my_btn {
+    padding: 8px 28px !important;
+    margin-top: 24px !important;
+    border-radius: 35px !important;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.384);
+}
+
+/* ===========================================
+        about section 
+============================================ */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background: rgba(128, 128, 128, 0.253);
+}
+
+/* left side  */
+
+.about .alside {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .alside img {
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+    border-radius: 90px 3px 90px 90px;
+}
+
+/* right side  */
+
+.about .arside {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.about .arside h3, h2, p, .btn_grp {
+    padding: 0px 20px 0 30px;
+}
+
+.about .arside .btn_grp {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.arside .btn_grp .my_btn {
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 255, 0.384);
+    transition: .3s all linear;
+}
+
+.arside .btn_grp i {
+    transition: .3s all linear;
+}
+
+.arside .btn_grp i:hover {
+    color: var(--primary-color);
+}
+
+.arside h3 {
+    color: var(--primary-color) !important;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.arside h2 {
+    font-size: 2.3rem;
+    padding-right: 50px;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* ==========================================
+    client section 
+========================================== */
+
+.clients {
+    width: 100%;
+    height: 60vh;
+}
+
+.clients .chc {
+    color: var(--primary-color);
+}
+
+.clients .clnt_div {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.336);
+    border-radius: 2px 40px 2px 40px;
+    transition: .3s linear;
+}
+
+.clients .clnt_div:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.336);
+}
+
+.clients .clnt_div i {
+    background: rgba(128, 128, 128, 0.336);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--primary-color) !important;
+}
+
+/* ============================================
+    recent properties
+============================================= */
+
+.properties {
+    width: 100%;
+    height: 100vh;
+    background: #DFDFDF;
+}
+
+.properties .phead {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.properties .phead h2 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 5px 3px 20px 0 rgb(0, 0, 0);
+}
+
+.properties .row1 h3 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.properties .row2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.properties .row3 .box {
+    background: white;
+    padding: 10px 10px;
+    border-radius: 2px 30px 2px 30px;
+}
+
+.properties .row3 .box img {
+    min-height: 250px;
+    margin-bottom: 10px;
+    border-radius: 2px 30px 2px 30px;
+}
+
+.properties .row3 .amount {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.properties .row3 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* =============================================
+    work section
+============================================= */
+
+.work {
+    width: 100%;
+    height: 100vh;
+    background: #DFDFDF;
+}
+
+.work .wh {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.work h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.work .whead p {
+    padding-bottom: 60px;
+}
+
+.work .work_div .wicons i {
+    color: var(--primary-color);
+    padding: 20px;
+    border-radius: 50%;
+    background: #b4adad;
+}
+
+.work .work_div {
+    transition: .4s linear;
+    padding: 30px 10px;
+    border-radius: 50px 2px 50px 2px;
+}
+
+.work .work_div:hover {
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.658);
+}
+
+.work .work_div h3 {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 5px 0 20px 0;
+}
+
+/* =======================================
+    featured properties 
+======================================= */
+
+.fproperties {
+    width: 100%;
+    height: 150vh;
+}
+
+.fproperties .fpbox {
+    padding: 10px 10px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.589);
+    border-radius: 2px 30px 2px 30px;
+    transition: .2s linear;
+}
+
+.fproperties .fpbox:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.589);
+    transform: translateY(-15px);
+}
+
+.fproperties .fpbox .amount {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.fproperties .fpbox img {
+    border-radius: 2px 30px 2px 30px;
+}
+
+.fproperties .btn_grp {
+    margin-top: 50px !important;
+}
+
+.fproperties .my_btn {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 255, 0.664);
+    text-decoration: none;
+}
+
+/* ======================================================
+        testimonial section 
+===================================================== */
+
+.testimonial {
+    width: 100%;
+    height: 100vh;
+    background: #DFDFDF;
+}
+
+.testimonial .thead h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.testimonial .thead h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+
+.testimonial .thead p {
+    color: rgb(139, 130, 130);
+    padding-bottom: 30px;
+}
+
+.testimonial .carousel-item img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50% 50% 0 50%;
+}
+
+.testimonial .carousel-item i {
+    font-size: 10rem !important;
+    opacity: .3;
+}
+
+.testimonial .carousel-item .tlside {
+    display: flex;
+    justify-content: center;
+}
+
+/* <!-- ================================================
+        newsletter 
+==================================================== --> */
+
+.newsletter {
+    width: 100%;
+    height: 40vh;
+}
+
+.newsletter h2 {
+    padding-top: 60px;
+    text-transform: capitalize;
+}
+
+.newsletter h3 {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.newsletter .nlinput {
+    margin-top: 30px;
+}
+
+.newsletter .nlinput input {
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.527);
+}
+
+.newsletter .nlinput .my_btn {
+    border-radius: 0 20px 20px 0 !important;
+    padding: 6px 25px !important;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.527);
+}
+
+/* ======================================================
+================footer section =========================
+====================================================== */
+
+footer {
+    background: var(--primary-color);
+    border-radius: 100px 0 0 0;
+}
+
+footer a {
+    color: white !important;
+    font-size: .8rem;
+}
+
+footer h3 {
+    color: white !important;
+    font-size: 1.6rem;
+}
+
+footer h4 {
+    color: white !important;
+    font-size: 1.1rem;
+    padding: 20px 0 0 0;
+}
+.sbtn{
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+.sbtn i{
+    padding: 15px;
+    background: rgb(44, 141, 185);
+    border-radius: 20px 20px 3px 20px;
+    color: white;
+}
+.sbtn i:hover{    
+    background: rgb(38, 111, 145);
+    box-shadow: 10px 10px 10px white;
+  
+}
+
+@media (max-width:768px) {
+    /* navbar  */
+    #loading{
+        height: 100vh;
+        width: 100%;
+        background: url(../images/Gear.gif) center no-repeat;
+        background-size: 5% 5%;
+    }
+    .navbar {
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .navbar-nav .nav-item {
+        margin-left: 0px;
+    }
+    .navbar-nav .my_btn {
+        color: white !important;
+        width: 50%;
+        padding: 6px 6px !important;
+        transform: translateX(50%);
+    }
+    /* TOP BANNER */
+    .top_banner {
+        width: 100%;
+        height: auto;
+    }
+    /* left side  */
+    .top_banner .hlside {
+        align-items: center;
+        text-align: center;
+    }
+    .top_banner .hlside h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 0px;
+        font-size: 1.8rem;
+    }
+    .top_banner .hlside p {
+        line-height: 1.1;
+        padding-right: 0px;
+        padding-left: 0;
+    }
+    .hlside .btn_grp {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .hlside .btn_grp .my_btn {
+        color: white !important;
+        width: 50%;
+        font-size: .8rem;
+        padding: 8px 15px !important;
+    }
+    .hlside .btn_grp .fas {
+        font-size: 1.9rem;
+    }
+    .top_banner .hrside {
+        width: 100%;
+        height: auto;
+    }
+    .top_banner .topview {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .top_banner .hrside img {
+        width: 100%;
+        min-height: 150px;
+        height: auto;
+        margin-top: 30px;
+        border-radius: 90px 90px 3px 90px;
+    }
+    /* header er mid search box  */
+    .top_banner .search_bar {
+        border-radius: 80px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.548);
+        padding-bottom: 10px;
+        margin: 20px 0 50px 0;
+        padding-left: 80px;
+        line-height: 1;
+    }
+    .top_banner .search_bar .my_btn {
+        padding: 8px 28px !important;
+        margin-top: 0px !important;
+        border-radius: 35px !important;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 255, 0.384);
+        margin-left: 0px !important;
+        margin-right: 60px;
+    }
+    .top_banner .search_bar input {
+        font-size: .8rem;
+    }
+    /* about section  */
+    .about {
+        width: 100%;
+        height: auto;
+    }
+    /* left side  */
+    .about .alside {
+        width: 100%;
+        height: auto;
+    }
+    .about .alside img {
+        width: 100%;
+        min-height: 150px;
+        height: auto;
+        margin: 20px 0;
+    }
+    /* right side  */
+    .about .arside {
+        width: 100%;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .about .arside h3, h2, p, .btn_grp {
+        padding: 0px;
+    }
+    .about .arside .btn_grp {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .arside .btn_grp .my_btn {
+        color: white !important;
+        font-size: .8rem;
+        padding: 8px 15px !important;
+    }
+    .arside .btn_grp i {
+        font-size: 2rem;
+    }
+    .arside h2 {
+        font-size: 1.9rem;
+        padding-right: 0px;
+    }
+    .arside p {
+        font-size: .8rem;
+        padding-right: 0px;
+    }
+    /* clients section  */
+    .clients {
+        width: 100%;
+        height: auto;
+    }
+    .clients h2 {
+        font-size: 1.9rem;
+        margin-bottom: 0 !important;
+    }
+    .clients .clnt_div {
+        min-height: 150;
+        padding: 0 5px;
+    }
+    .clients .clnt_div h3 {
+        font-size: 1.4rem !important;
+    }
+    .clients .clnt_div i {
+        font-size: 1.6rem;
+    }
+    /* .properties  */
+    .properties {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .properties .phead h2 {
+        font-size: 1.9rem;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .properties .row2 h4 {
+        font-size: .9rem;
+    }
+    .properties .row2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+    .properties .row3 .box {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0 15px 0 15px;
+        padding: 5px;
+    }
+    .properties .row3 .box img {
+        min-height: 60px;
+        border-radius: 0 15px 0 15px;
+    }
+    .properties .row3 .amount {
+        justify-content: center;
+        font-size: .7rem;
+    }
+    .box .place {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .box #place p {
+        font-size: .5rem;
+    }
+    .box #place i {
+        font-size: .5rem;
+    }
+    .properties .row3 h3 {
+        font-size: .8rem;
+    }
+    /* work section  */
+    .work {
+        width: 100%;
+        height: auto;
+        padding-bottom: 25px;
+    }
+    .work h2 {
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+        letter-spacing: 2px;
+    }
+    .work .whead p {
+        padding-bottom: 10px;
+        font-size: .8rem;
+    }
+    .work .work_div .wicons i {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .work .work_div {
+        padding: 20px 10px;
+    }
+    .work .work_div h3 {
+        font-size: 1.4rem;
+        padding-bottom: 0;
+    }
+    .work .work_div p {
+        font-size: .8rem;
+    }
+    /* .fproperties section  */
+    .fproperties {
+        width: 100%;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .fproperties .fhead h3 {
+        font-size: 1.2rem;
+        color: var(--primary-color);
+    }
+    .fproperties .fhead h2 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    .fproperties .fhead p {
+        font-size: .8rem;
+        margin-bottom: 0;
+        padding-bottom: 0px;
+    }
+    .fproperties #city h3 {
+        font-size: 1rem;
+    }
+    .fproperties #city p {
+        font-size: .9rem;
+    }
+    .fproperties .row {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .fproperties .fpbox {
+        padding: 10px 0;
+        min-height: 200px;
+        margin-top: 20px;
+    }
+    .fproperties .fpbox:hover {
+        transform: translateY(-10px);
+    }
+    .fproperties .fpbox .amount {
+        font-size: 1rem;
+        width: 80%;
+    }
+    .fproperties .fpbox img {
+        border-radius: 2px 30px 2px 30px;
+        min-height: 100px;
+        width: 90%;
+    }
+    .fproperties .btn_grp {
+        margin-top: 30px !important;
+    }
+    /* testimonials  */
+    .testimonial {
+        width: 100%;
+        height: auto;
+    }
+    .testimonial .thead h2 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+    }
+    .testimonial .thead p {
+        padding-bottom: 30px;
+        font-size: .8rem;
+    }
+    .testimonial .carousel-item img {
+        height: 200px;
+        width: 200px;
+    }
+    .testimonial .carousel-item i {
+        font-size: 6rem !important;
+        opacity: .3;
+    }
+    .testimonial .carousel-item p {
+        font-size: .8rem;
+    }
+    .testimonial .carousel-item .tlside {
+        display: flex;
+        justify-content: center;
+    }
+    /* news letter sectopn */
+    
+    .newsletter h2 {
+       font-size: 1.4rem;
+    }
+   
+    .newsletter .nlinput .my_btn {
+        font-size: 1rem;
+    }
+}

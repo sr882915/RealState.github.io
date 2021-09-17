@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.State | Home</title>
+    <!-- animation css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- bootstrap css cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <!-- aos CSS    -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- external css  -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body onload="loading()">
+    <div id="loading"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+
+                <a class="navbar-brand" href="#"><span class="brand">R.</span>State</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#client">Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#property">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link my_btn" href="#">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="top_banner" id="home">
+            <div class="container">
+                <div class="row topview">
+                    <!-- left side  -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 hlside"  data-aos="fade">
+                        <h1>Find your next <span class="tbhead"> perfect</span> Place to<span
+                                class="tbhead "> live</span></h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos qui vitae officiis sunt
+                            inventore rerum mollitia praesentium, vel quae perspiciatis ab. Ipsa vero alias
+                            exercitationem minus saepe necessitatibus, quasi id.</p>
+                        <div class="btn_grp">
+                            <a href="#" class="my_btn">Learn More</a>
+                            <i class="fas fa-play-circle fa-3x"></i>
+                        </div>
+                    </div>
+                    <!-- right side  -->
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 hrside" data-aos="fade">
+                        <figure>
+                            <img src="./images/property (1).jpg" alt="property" class="img-fluid">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- total row  -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12" data-aos="fade">
+                        <nav class="navbar navbar-expand-lg navbar-light text-center bg-transparent search_bar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Location
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Location1</a>
+                                        <a class="dropdown-item" href="#">Location2</a>
+                                        <a class="dropdown-item" href="#">Location3</a>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Location"
+                                            aria-label="Search">
+                                    </form>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Property Type
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Banglow</a>
+                                        <a class="dropdown-item" href="#">Flat</a>
+                                        <a class="dropdown-item" href="#">Full House</a>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Property Type"
+                                            aria-label="Search">
+                                    </form>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Max Price
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">3L-5L</a>
+                                        <a class="dropdown-item" href="#">5L-15L</a>
+                                        <a class="dropdown-item" href="#">15L-30L</a>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Max 5 Lakhs"
+                                            aria-label="Search">
+                                    </form>
+                                </li>
+                                <li class="nav-item dropdown">
+                                </li>
+                            </ul>
+                            <form class="form-inline mt-3 mx-auto my-lg-0">
+                                <button
+                                    class="my_btn animate__animated animate__bounce animate__delay-5s animate__repeat-3	 animate__slower ml-auto my-sm-0"
+                                    type="submit">Search</button>
+                            </form>
+
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ===========================================
+     about section 
+============================================== -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <!-- left side  -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 alside" data-aos="fade-up">
+                    <figure><img src="./images/property (2).jpg" class="img-fluid" alt=""></figure>
+                </div>
+                <!-- right side  -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 arside" data-aos="fade-up">
+                    <h3>About Us</h3>
+                    <h2>we provide the best property for you!</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti officia eligendi quo explicabo
+                        laudantium obcaecati? Nobis sit libero a impedit officiis quas nisi alias at molestiae. Ullam ex
+                        quaerat eaque.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, dolore! Eius autem, quos ab nemo
+                        animi natus architecto ipsum explicabo!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores ducimus hic fuga fugit nesciunt
+                        voluptatem aliquid illo iure repellendus doloribus.</p>
+                    <div class="btn_grp">
+                        <a href="#" class="my_btn">Learn More</a>
+                        <i class="fas fa-play-circle fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========================================
+     client section 
+============================================== -->
+    <section class="clients" id="client">
+        <div class="container text-center">
+            <h2 class="my-4 py-4 animate__animated animate__animated animate__infinite" data-aos="fade">What You Can Do <span class="chc"> Now!</span></h2>
+            <div class="row">
+                <!-- 1st col  -->
+                <div class="col-lg-4">
+                    <div class="clnt_div" data-aos="fade">
+
+                        <div class="cicons py-4">
+                            <i class="fas fa-user fa-2x"></i>
+                        </div>
+                        <h3>Make Your Dream True</h3>
+                        <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- 2nd col  -->
+                <div class="col-lg-4">
+                    <div class="clnt_div"  data-aos="fade">
+
+                        <div class="cicons py-4">
+                            <i class="fas fa-desktop fa-2x"></i>
+                        </div>
+                        <h3>Start Your Membership</h3>
+                        <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <!-- 3rd col  -->
+                <div class="col-lg-4">
+                    <div class="clnt_div"  data-aos="fade">
+
+                        <div class="cicons py-4">
+                            <i class="fas fa-home fa-2x"></i>
+                        </div>
+                        <h3>Enjoy Your New Home</h3>
+                        <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==============================================
+    properties section 
+============================================== -->
+
+    <section class="properties" id="property">
+        <div class="container">
+            <!-- row 1  -->
+            <div class="row row1"  data-aos="fade">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12 phead">
+                    <h3 class="r1heading ">recent</h3>
+                    <h2>Recently Added Properties</h2>
+                </div>
+            </div>
+            <!-- row 2  -->
+            <div class="row row2" data-aos="fade">
+                <h4 class="text-primary mr-1">Find More Projects</h4>
+                <i class="fas fa-long-arrow-alt-right text-primary"></i>
+            </div>
+            <!-- row 3  -->
+
+            <div id="carouselExampleControls" class="carousel slide row3" data-ride="carousel" data-aos="fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- 1st carousel  -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (13).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (4).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (5).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <!-- second carousel  -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (6).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (7).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (14).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <!-- third carousel  -->
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (9).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (10).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-4">
+                                <div class="box">
+                                    <img src="./images/property (11).jpg" class="img-fluid" alt="">
+                                    <h3 class="amount">1100100</h3>
+                                    <div class="row place" id="place">
+                                        <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                            <h3>palace</h3>
+                                            <p>city,country</p>
+                                        </div>
+                                        <div
+                                            class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                            <i class="fas fa-bed"> 5</i>
+                                            <i class="fas fa-bath"> 3</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==============================================
+              work section 
+================================================ -->
+
+    <section class="work text-center" id="work">
+        <div class="container">
+            <div class="whead">
+                <h3 class="pt-5 wh">Work</h3>
+                <h2>How It Works</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio asperiores repudiandae
+                    accusantium aspernatur architecto aliquid vitae ipsum ducimus, itaque, et doloribus minus pariatur?
+                    Distinctio fugit rem doloribus cum beatae!</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="work_div">
+                        <div class="wicons">
+                            <i class="fas fa-search fa-2x"></i>
+                        </div>
+                        <h3>Fine Home</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cum hic excepturi incidunt
+                            quis reprehenderit officiis porro expedita quae iusto.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="work_div">
+                        <div class="wicons">
+                            <i class="fas fa-handshake fa-2x"></i>
+                        </div>
+                        <h3>Meet Roommates</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cum hic excepturi incidunt
+                            quis reprehenderit officiis porro expedita quae iusto.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="work_div">
+                        <div class="wicons">
+                            <i class="fas fa-user-shield fa-2x"></i>
+                        </div>
+                        <h3>Make it Official</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam cum hic excepturi incidunt
+                            quis reprehenderit officiis porro expedita quae iusto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+    featured properties 
+=============================================== -->
+
+    <section class="fproperties" data-aos="fade" id="fproperties">
+        <div class="container text-center">
+            <div class="fhead mt-5 pt-3">
+                <h3 class="">Recent</h3>
+                <h2>Our Featured Properties</h2>
+                <p class="py-1 mb-3 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis distinctio
+                    asperiores repudiandae
+                    accusantium aspernatur architecto aliquid vitae ipsum ducimus, itaque, et doloribus minus pariatur?
+                    Distinctio fugit rem doloribus cum beatae!</p>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (10).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (11).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (14).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (5).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (3).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="fpbox">
+                        <img src="./images/property (4).jpg" class="img-fluid" alt="">
+
+                        <h3 class="amount">1100100</h3>
+                        <div class="row" id="city">
+                            <div class="col-lg-6 col-md-6 col-6 d-flex flex-column align-items-center">
+                                <h3>palace</h3>
+                                <p>city,country</p>
+                            </div>
+                            <div
+                                class="col-lg-6 col-md-6 col-6 picons d-flex align-items-center justify-content-around">
+                                <i class="fas fa-bed"> 5</i>
+                                <i class="fas fa-bath"> 3</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_grp">
+                <a href="#" class="my_btn">Load More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===========================================
+    testimonial section 
+================================================== -->
+
+    <section class="testimonial" >
+        <div class="container">
+            <div class="thead text-center pt-5" data-aos="fade">
+                <h3>Testimonial</h3>
+                <h2>What They Are Saying</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta eaque distinctio neque nam in
+                    corporis doloribus necessitatibus odit facilis fugiat iure reiciendis ipsum officia, tempora
+                    expedita inventore? Odit, distinctio iure.</p>
+
+            </div>
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 tlside">
+                                <figure><img src="./images/property (6).jpg" class="img-fluid" alt=""></figure>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 trside">
+                                <i class="fas fa-quote-left fa-5x"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum cupiditate
+                                    molestias qui expedita, ratione aspernatur sunt sed fugiat commodi aut minus
+                                    perferendis, voluptatum quisquam quos. A sapiente voluptates non commodi optio sunt
+                                    delectus ipsa quidem iste quae molestias eum minima sequi recusandae maiores, quasi,
+                                    cum, necessitatibus aspernatur est dolor!</p>
+                                <h3>Youtuber</h3>
+                                <p>Code Galaxy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 tlside">
+                                <figure><img src="./images/property (5).jpg" class="img-fluid" alt=""></figure>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 trside">
+                                <i class="fas fa-quote-left fa-5x"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum cupiditate
+                                    molestias qui expedita, ratione aspernatur sunt sed fugiat commodi aut minus
+                                    perferendis, voluptatum quisquam quos. A sapiente voluptates non commodi optio sunt
+                                    delectus ipsa quidem iste quae molestias eum minima sequi recusandae maiores, quasi,
+                                    cum, necessitatibus aspernatur est dolor!</p>
+                                <h3>Business Man</h3>
+                                <p>Yahhor Comapny</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 tlside">
+                                <figure><img src="./images/property (4).jpg" class="img-fluid" alt=""></figure>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 trside">
+                                <i class="fas fa-quote-left fa-5x"></i>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque harum cupiditate
+                                    molestias qui expedita, ratione aspernatur sunt sed fugiat commodi aut minus
+                                    perferendis, voluptatum quisquam quos. A sapiente voluptates non commodi optio sunt
+                                    delectus ipsa quidem iste quae molestias eum minima sequi recusandae maiores, quasi,
+                                    cum, necessitatibus aspernatur est dolor!</p>
+                                <h3>Public Manager</h3>
+                                <p>PPF Fund</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+        newsletter 
+==================================================== -->
+    <section class="newsletter" data-aos="fade">
+        <div class="container text-center d-flex justify-content-center flex-column align-items-center">
+            <h2>Have question in mind</h2>
+            <h3>let us help you</h3>
+            <div class="nlinput w-75">
+                <div class="input-group mb-3 w-100 d-flex align-items-center">
+                    <input type="text" class="form-control " placeholder="yourmail@domain.com"
+                        aria-label="Recipient's email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn my_btn" type="submit" id="button-addon2">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =================================================
+            footer section 
+    =================================================== -->
+
+    <footer class="py-3 container-fluid" id="contactus">
+        <div class="row text-center text-white">
+            <div class="col-lg-3 col-md-3 col-12 d-flex justify-content-center align-items-center">
+                <h3>R.State</h3>
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex flex-column">
+                        <h4>Quick Link</h4>
+                        <hr>
+                        <a href="#">Architechture</a>
+                        <a href="#">Agency</a>
+                        <a href="#">Asset Valuation</a>
+                        <a href="#">Building</a>
+                        <a href="#">Business Rates</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex flex-column">
+                        <h4>Location</h4>
+                        <hr>
+                        <a href="#">Architechture</a>
+                        <a href="#">Agency</a>
+                        <a href="#">Asset Valuation</a>
+                        <a href="#">Building</a>
+                        <a href="#">Business Rates</a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 d-flex flex-column">
+                        <h4>Services</h4>
+                        <hr>
+                        <a href="#">Properties</a>
+                        <a href="#">Action</a>
+                        <a href="#">Asset Valuation</a>
+                        <a href="#">Building</a>
+                        <a href="#">Business Rates</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12 d-flex flex-column">
+                <h4>Contact</h4>
+                <hr>
+                <a href="#">+231452365</a>
+                <a href="#">dummyemail@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====================================
+        button section
+    ==================================== -->
+    <div class="sbtn">
+        <div class="sbtn_inner">
+            <i class="fas fa-arrow-up" onclick="topFunction()" id="myBTn"></i>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------javascript---------------------------- -->
+    <!-- preloader -->
+    <script>
+        var preloader = document.getElementById('loading');
+        function loading() {
+            preloader.style.display = "none";
+        }
+    </script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 250,
+            duration: 1000
+        });
+    </script>
+
+    <!-- get the button  -->
+    <script>
+
+
+        mybutton = document.getElementById("myBTn");
+        // when the user scroll down 20px from top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // when the uswer clicks on the button, scroll to th top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; //for safari
+            document.documentElement.scrollTop = 0; //for chrome, firefox, ie and others
+        }
+    </script>
+    <!-- ////////////////////////////// -->
+
+    <!-- bootstrap js cdn  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+
+    <!-- ----------------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
